@@ -17,7 +17,7 @@
           color="primary"
           v-bind="props"
         >
-          Dropdown
+          mjrnlorejas@tip.edu.ph
         </v-btn>
       </template>
 
@@ -63,9 +63,10 @@
              { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/' },
              { title: 'Calculator', icon: 'mdi-calculator', path: '/SimpleMath' },
              { title: 'String App', icon: 'mdi-alphabetical', path: '/StringManip'},
+             { title: 'Quiz', icon: 'mdi-earth', path: '/QuizView'},
              { title: 'About Vuetify', icon: 'mdi-vuetify', path: '/Vuetify'},
-             { title: 'About Me', icon: 'mdi-account-circle', path: '/AboutMe'},
-             { title: 'Quiz', icon: 'mdi-music', path: '/QuizView'},
+             { title: 'About Me', icon: 'mdi-cards-heart', path: '/AboutMe'},
+             { title: 'About Page', icon: 'mdi-account-circle', path: '/AboutPage'},
           ])
   
 

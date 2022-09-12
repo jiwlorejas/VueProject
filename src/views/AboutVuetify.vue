@@ -1,5 +1,4 @@
 <template>
-
 <v-card
        class="ma-15"
        max-width="650"
@@ -19,8 +18,5 @@
       <h4 class="text-center ma-10">Link: <a href="https://vuetifyjs.com/en/">https://vuetifyjs.com/en/</a></h4>
    </v-row>
     </v-card>  
-
-
-
 </template>
    

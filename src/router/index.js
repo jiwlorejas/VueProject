@@ -5,6 +5,7 @@ import HomeView from '../views/SimpleCalculator.vue'
 import AboutVuetify from '../views/AboutVuetify.vue'
 import AboutMe from '../views/AboutMe.vue'
 import QuizView from '../views/QuizView.vue'
+import AboutPage from '../views/AboutPage.vue'
 
 
 
@@ -45,6 +46,12 @@ const router = createRouter({
             path: '/QuizView',
             name: 'QuizView',
             component: QuizView
+        },
+
+        {
+            path: '/AboutPage',
+            name: 'AboutPage',
+            component: AboutPage
         },
 
     ]
