@@ -1,4 +1,5 @@
 <template>
+  <v-card>
     <div id="app">
       <h1>Quiz App</h1>
       <quiz @quiz-completed="handleQuizCompleted" :key="quizKey" />
@@ -9,8 +10,12 @@
         :score="score"
         @reload="updateQuiz"
         @close="showModal = false"
+        
+      
       />
+   
     </div>
+  </v-card>
   </template>
   
   <script>
@@ -53,7 +58,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    color: #691f09;
     line-height: 1.6;
   }
   </style>

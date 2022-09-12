@@ -1,5 +1,6 @@
 <template>
-    <div class="container">
+    <v-parallax src="https://www.ncl.ac.uk/mediav8/gps/images/microsoftteams-image2.jpg">
+      <div class="container">
       <div class="correctAnswers">
         You have
         <strong>{{ correctAnswers }} correct {{ pluralizeAnswer }}!</strong>
@@ -20,6 +21,9 @@
         ></button>
       </form>
     </div>
+
+    </v-parallax>
+    
   </template>
   
   <script>
@@ -113,7 +117,7 @@
         this.loading = true;
         
         let index = 0; //To identify single answer
-        let {data} = await axios.get("https://opentdb.com/api.php?amount=5&category=21&type=multiple");
+        let {data} = await axios.get("https://opentdb.com/api.php?amount=10&category=22&difficulty=medium&type=multiple");
         let questions = data.results.map((question) => {
           question.answers = [
             question.correct_answer,
@@ -212,15 +216,15 @@
     padding: 1rem;
     margin: 0.5rem;
     width: 40%;
-    background-color: rgba(248, 183, 4, 0.3);
+    background-color: rgba(10, 10, 10, 0.3);
     border: none;
     border-radius: 0.4rem;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 5px 5px rgba(253, 236, 1, 0.2);
   }
   button:hover:enabled {
     transform: scale(1.02);
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
-      0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px 0 rgba(247, 226, 168, 0.801), 0 1px 7px 0 rgba(234, 247, 154, 0.12),
+      0 3px 1px -1px rgba(156, 158, 7, 0.2);
     cursor: pointer;
   }
   button:focus {
@@ -255,20 +259,20 @@
     animation-delay: 200ms;
     animation-iteration-count: 3;
     animation-timing-function: ease-in-out;
-    color: black;
+    color: rgb(10, 59, 17);
     background: linear-gradient(
       210deg,
-      rgba(0, 178, 72, 0.25),
-      rgba(0, 178, 72, 0.5)
+      rgba(122, 198, 241, 0.25),
+      rgba(65, 205, 248, 0.5)
     );
   }
   
   button.wrongAnswer {
-    color: black;
+    color: rgb(10, 59, 17);
     background: linear-gradient(
       210deg,
-      rgba(245, 0, 87, 0.25),
-      rgba(245, 0, 87, 0.5)
+      rgba(245, 9, 9, 0.25),
+      rgba(196, 102, 102, 0.904)
     );
   }
   
@@ -278,11 +282,11 @@
     animation-delay: 200ms;
     animation-iteration-count: 2;
     animation-timing-function: ease-in-out;
-    color: black;
+    color: rgb(10, 59, 17);
     background: linear-gradient(
       210deg,
-      rgba(0, 178, 72, 0.25),
-      rgba(0, 178, 72, 0.5)
+      rgba(43, 240, 122, 0.25),
+      rgba(136, 236, 176, 0.5)
     );
   }
   </style>

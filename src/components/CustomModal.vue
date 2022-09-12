@@ -69,7 +69,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(250, 185, 6, 0.5);
     display: table;
     transition: opacity 0.3s ease;
   }
@@ -84,9 +84,9 @@
     max-width: 650px;
     margin: 0px auto;
     padding: 20px 30px;
-    background-color: #fff;
+    background-color: rgb(233, 52, 52);
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    box-shadow: 0 2px 8px rgba(155, 59, 55, 0.33);
     transition: all 0.3s ease;
   }
   
@@ -95,11 +95,11 @@
   }
   
   .modal-header h2 {
-    color: rgb(0, 178, 72);
+    color: rgb(228, 137, 85);
   }
   
   .modal-header h3 {
-    color: rgb(0, 178, 72);
+    color: rgb(255, 44, 7);
   }
   
   .modal-body {
@@ -141,15 +141,15 @@
     padding: 1rem 2rem;
     background: linear-gradient(
       210deg,
-      rgba(187, 0, 47, 0.8),
-      rgba(245, 0, 87, 0.6)
+      rgba(216, 11, 11, 0.8),
+      rgba(151, 28, 28, 0.6)
     );
     border-radius: 7px;
     border: none;
   }
   
   .anchor-footer {
-    color: black;
+    color: rgb(252, 8, 191);
     text-decoration: none;
     cursor: default;
   }
@@ -165,14 +165,14 @@
   
   .highlight {
     border-radius: 4px;
-    background-color: rgba(187, 0, 47, 0.3);
+    background-color: rgba(209, 163, 35, 0.3);
     padding: 0.25rem 0.5rem;
   }
   
   #score {
     background-color: rgb(210, 200, 200);
     border-radius: 5px;
-    box-shadow: 2px 3px 9px gray;
+    box-shadow: 2px 3px 9px rgb(3, 2, 43);
   }
   
   #chooseCategory {

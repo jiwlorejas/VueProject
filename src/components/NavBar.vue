@@ -3,8 +3,8 @@
       <v-toolbar app>
        <v-app-bar-nav-icon @click='toggleDrawer'></v-app-bar-nav-icon>
       <v-toolbar-title >
-        <span class="font-weight-light">Vuetify </span>
-        <span>Demo</span>
+        <span class="font-weight-light"> Midterm </span>
+        <span>Project</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
