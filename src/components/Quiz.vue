@@ -212,7 +212,7 @@
     padding: 1rem;
     margin: 0.5rem;
     width: 40%;
-    background-color: rgba(100, 100, 100, 0.3);
+    background-color: rgba(248, 183, 4, 0.3);
     border: none;
     border-radius: 0.4rem;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
