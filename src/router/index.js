@@ -1,11 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Login from '../views/Login.vue';
+import Register from '../views/Register.vue';
+import Dashboard from '../views/Dashboard.vue';
+import AboutVuetify from '../views/AboutVuetify.vue'
 import SimpleCalculator from '../views/SimpleCalculator.vue'
 import StringManipulation from '../views/StringManipulation.vue'
-import HomeView from '../views/SimpleCalculator.vue'
-import AboutVuetify from '../views/AboutVuetify.vue'
-import AboutMe from '../views/AboutMe.vue'
 import QuizView from '../views/QuizView.vue'
+import HomeView from '../views/HomeView.vue'
+import AboutMe from '../views/AboutMe.vue'
 import AboutPage from '../views/AboutPage.vue'
+
 
 
 
@@ -13,8 +17,8 @@ const router = createRouter({
     history: createWebHistory(
         import.meta.env.BASE_URL),
     routes: [{
-            path: '/',
-            name: 'home',
+            path: '/HomeView',
+            name: 'HomeView',
             component: HomeView
         },
 
@@ -52,6 +56,24 @@ const router = createRouter({
             path: '/AboutPage',
             name: 'AboutPage',
             component: AboutPage
+        },
+
+        {
+            path: '/login',
+            name: 'login',
+            component: Login
+        },
+
+        {
+            path: '/register',
+            name: 'Register',
+            component: Register
+        },
+
+        {
+            path: '/Dashboard',
+            name: 'Dashboard',
+            component: Dashboard
         },
 
     ]
