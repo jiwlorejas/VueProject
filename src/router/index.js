@@ -1,13 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Login from '../views/Login.vue';
 import Register from '../views/Register.vue';
-import Dashboard from '../views/Dashboard.vue';
+import Dashboard from '../views/DashboardView.vue';
 import AboutVuetify from '../views/AboutVuetify.vue'
 import SimpleCalculator from '../views/SimpleCalculator.vue'
 import StringManipulation from '../views/StringManipulation.vue'
 import QuizView from '../views/QuizView.vue'
 import HomeView from '../views/HomeView.vue'
-import AboutMe from '../views/AboutMe.vue'
 import AboutPage from '../views/AboutPage.vue'
 
 
@@ -41,12 +40,6 @@ const router = createRouter({
         },
 
         {
-            path: '/AboutMe',
-            name: 'AboutMe',
-            component: AboutMe
-        },
-
-        {
             path: '/QuizView',
             name: 'QuizView',
             component: QuizView
@@ -59,7 +52,7 @@ const router = createRouter({
         },
 
         {
-            path: '/login',
+            path: '/',
             name: 'login',
             component: Login
         },
@@ -71,7 +64,7 @@ const router = createRouter({
         },
 
         {
-            path: '/Dashboard',
+            path: '/dashboard',
             name: 'Dashboard',
             component: Dashboard
         },

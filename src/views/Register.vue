@@ -62,22 +62,22 @@ export default {
 #registerBtn {
   margin-bottom: 40px;
   margin-top: 40px;
-  background-color: #a0a0ee;
+  background-color: #e0a081;
   color: white;
   font-size: 20px;
 }
 
 #registerBtn:hover {
-  background-color: #4e1e7c;
+  background-color: #8d2e11;
   color: white;
 }
 
 #link-signin {
-  color: #4e1e7c;
+  color: #5c1c03;
   background-color: transparent;
 }
 
 #link-signin:hover {
-  color: #cc66ee;
+  color: #812b10;
 }
 </style>

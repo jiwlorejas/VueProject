@@ -1,6 +1,6 @@
 import { getAuth } from "firebase/auth";
-import { database } from "../firebaseConfig";
-import { auth } from "../firebaseConfig";
+import { database } from "../firebase";
+import { auth } from "../firebase";
 
 let dbRef = database.ref("Users");
 var admin = false;

@@ -10,11 +10,12 @@
   "dependencies": {
     "@mdi/font": "5.9.55",
     "axios": "^0.27.2",
-    "firebase": "^8.10.1",
+    "firebase": "^9.10.0",
     "init": "^0.1.2",
     "my-project": "^0.0.1",
     "pinia": "^2.0.17",
     "roboto-fontface": "*",
+    "update": "^0.4.2",
     "vue": "^3.2.36",
     "vue-router": "^4.1.5",
     "vuetify": "^3.0.0-beta.0",

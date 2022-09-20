@@ -1,148 +1,108 @@
 <template>
-    <v-card
-      class="mx-auto"
-      max-width="344"
-    >
-    <v-img
-    alignment="justify-center" 
-    lazy-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Calculator_icon.svg/2048px-Calculator_icon.svg.png"
-    max-height="350"
-    max-width="250"
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Calculator_icon.svg/2048px-Calculator_icon.svg.png"
-  ></v-img>
-  
-      <v-card-title>
-          Calculator
-      </v-card-title>
-      
-      <v-card-actions>
-        <v-btn
-          color="orange lighten-2"
-          text
+  <v-card
+    max-width="800"
+    class="ma-10"
+  >
+
+    <v-container>
+      <v-row dense>
+        <v-col cols="12">
+          <v-card
+            color="#385F73"
+            dark
+          >
+            <v-card-title style="color: white;" class="text-h5">
+              Dasboard
+            </v-card-title>
+
+            <v-card-subtitle style="color: white;">My profile information can be found here.</v-card-subtitle>
+
+            <v-card-actions>
+              <v-btn text>
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+
+        <v-col
+          v-for="(item, i) in items"
+          :key="i"
+          cols="12"
         >
-          Description:
-        </v-btn>
-  
-        <v-spacer></v-spacer>
-  
-        <v-btn
-          icon
-          @click="show = !show"
-        >
-          <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-        </v-btn>
-      </v-card-actions>
-  
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
-  
-          <v-card-text>
-            A Simple Calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only 
-            addition, subtraction, multiplication and division mathematical calculations.
-          </v-card-text>
-    
-        </div>
-      </v-expand-transition>
-    </v-card>
-    <v-card
-      class="mx-auto"
-      max-width="344"
-    >
-    <v-img
-    alignment="justify-center" 
-    lazy-src="https://us.123rf.com/450wm/derin30/derin302004/derin30200400070/144870671-vowel-balloons-vector-illustration-education-concept.jpg?ver=6"
-    max-height="350"
-    max-width="250"
-    src="https://us.123rf.com/450wm/derin30/derin302004/derin30200400070/144870671-vowel-balloons-vector-illustration-education-concept.jpg?ver=6"
-  ></v-img>
-  
-      <v-card-title>
-          String Manipulator
-      </v-card-title>
-      
-      <v-card-actions>
-        <v-btn
-          color="orange lighten-2"
-          text
-        >
-          Description:
-        </v-btn>
-  
-        <v-spacer></v-spacer>
-  
-        <v-btn
-          icon
-          @click="show = !show"
-        >
-          <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-        </v-btn>
-      </v-card-actions>
-  
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
-  
-          <v-card-text>
-            String manipulation basically refers to the process of handling and analyzing strings. 
-            It involves various operations concerned with modification and parsing of strings to use and change its data.
-          </v-card-text>
-    
-        </div>
-      </v-expand-transition>
-    </v-card>
-     <v-card
-      class="mx-auto"
-      max-width="344"
-    >
-    <v-img
-    alignment="justify-center" 
-    lazy-src="https://www.kids-world-travel-guide.com/images/geography_ball_300.jpg"
-    max-height="350"
-    max-width="250"
-    src="https://www.kids-world-travel-guide.com/images/geography_ball_300.jpg"
-  ></v-img>
-  
-      <v-card-title>
-          Quiz App (Geography)
-      </v-card-title>
-      
-      <v-card-actions>
-        <v-btn
-          color="orange lighten-2"
-          text
-        >
-          Description:
-        </v-btn>
-  
-        <v-spacer></v-spacer>
-  
-        <v-btn
-          icon
-          @click="show = !show"
-        >
-          <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-        </v-btn>
-      </v-card-actions>
-  
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
-  
-          <v-card-text>
-            Geography is the study of places and the relationships between people and their environments. 
-            Geographers explore both the physical properties of Earth's surface and the human societies spread across it.
-          </v-card-text>
-    
-        </div>
-      </v-expand-transition>
-    </v-card>
-  </template>
-  
-  <script>
-      export default {
-        data: () => ({
-          show: false,
-        }),
-      }
-    </script>
+          <v-card 
+            :color="item.color"
+            dark
+          >
+            <div class="d-flex flex-no-wrap">
+              <div>
+                <v-card-title style="color: white;"
+                  class="text-h5"
+                  v-text="item.title"
+                ></v-card-title>
+
+                <v-card-subtitle style="color: white;" v-text="item.artist"></v-card-subtitle>
+
+                <v-card-actions>
+                  <v-btn
+                    v-if="item.artist === 'Calculator'"
+                    class="ml-2 mt-3"
+                    fab
+                    icon
+                    height="40px"
+                    right
+                    width="40px"
+                  >
+                    <v-icon>mdi-play</v-icon>
+                  </v-btn>
+
+                  <v-btn
+                    v-else
+                    class="ml-2 mt-5"
+                    outlined
+                    rounded
+                    small
+                  >
+                  </v-btn>
+                </v-card-actions>
+              </div>
+
+              <v-avatar
+                class="ma-3"
+                size="125"
+                tile
+              >
+                <v-img :src="item.src"></v-img>
+              </v-avatar>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-card>
+</template>
+<script>
+  export default {
+    data: () => ({
+      items: [
+        {
+          color: '#775fec',
+          src: '',
+          title: 'String Manipulator',
+          artist: 'Contains a string manipulator',
+        },
+        {
+          color: '#ffb6c1',
+          src: '',
+          title: 'Calculator',
+          artist: 'It contains a simple calculator',
+        },
+        {
+          color: '#00c992',
+          src: '',
+          title: 'Quiz',
+          artist: 'Simple Quiz about mathematics',
+        },
+      ],
+    }),
+  }
+</script>

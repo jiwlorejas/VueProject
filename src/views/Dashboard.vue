@@ -29,7 +29,7 @@
 import { useStore} from "vuex";
 import { useRouter } from "vue-router";
 import {computed} from "vue";
-import { auth } from '../firebaseConfig'
+import { auth } from '../firebase'
 export default {
   name: "DashboardComponent",
   

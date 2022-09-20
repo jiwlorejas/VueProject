@@ -3,8 +3,8 @@
       <v-toolbar app>
        <v-app-bar-nav-icon @click='toggleDrawer'></v-app-bar-nav-icon>
       <v-toolbar-title >
-        <span class="font-weight-light"> Midterm </span>
-        <span>Project</span>
+        <span class="font-weight-light"> Hey! </span>
+        <span>It's JEWEL ROSE</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
@@ -60,12 +60,11 @@
   const drawer = ref(false)
 
   const  items =  ref([
-             { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/' },
+             { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/dashboard' },
              { title: 'Calculator', icon: 'mdi-calculator', path: '/SimpleMath' },
              { title: 'String App', icon: 'mdi-alphabetical', path: '/StringManip'},
              { title: 'Quiz', icon: 'mdi-earth', path: '/QuizView'},
              { title: 'About Vuetify', icon: 'mdi-vuetify', path: '/Vuetify'},
-             { title: 'About Me', icon: 'mdi-cards-heart', path: '/AboutMe'},
              { title: 'About Page', icon: 'mdi-account-circle', path: '/AboutPage'},
           ])
   
