@@ -9,7 +9,7 @@ import QuizView from '../views/QuizView.vue'
 import Scores from '../views/Scores.vue';
 import HomeView from '../views/HomeView.vue'
 import AboutPage from '../views/AboutPage.vue'
-
+import MatchHistory from "../views/MatchHistory.vue"
 
 
 
@@ -75,6 +75,14 @@ const router = createRouter({
             name: 'Dashboard',
             component: Dashboard
         },
+
+        {
+            path: '/MatchHistory',
+            name: 'history',
+            component: MatchHistory,
+
+        },
+
 
     ]
 })

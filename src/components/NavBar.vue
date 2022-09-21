@@ -84,7 +84,7 @@
              { title: 'Calculator', icon: 'mdi-calculator', path: '/SimpleMath' },
              { title: 'String App', icon: 'mdi-alphabetical', path: '/StringManip'},
              { title: 'Quiz', icon: 'mdi-earth', path: '/QuizView'},
-             { title: 'Scores', icon: 'mdi-star', path: '/Scores', color: "#cfc43c" },
+             { title: 'Quiz Records', icon: 'mdi-history', path: '/MatchHistory' },
              { title: 'About Vuetify', icon: 'mdi-vuetify', path: '/Vuetify'},
              { title: 'About Page', icon: 'mdi-account-circle', path: '/AboutPage'},
         ],
