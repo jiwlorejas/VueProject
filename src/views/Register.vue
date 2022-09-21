@@ -16,9 +16,9 @@
           type="password" name="password" required v-model="password">
         </v-text-field>
         <v-btn id="registerBtn" elevation="5" height="60" block type="submit">
-          <strong>Register</strong>
+          <strong><router-link to="/register">Register</router-link></strong>
         </v-btn>
-        <h3><strong>Already have an account?</strong><router-link to="/" id="link-signin"><strong> Sign in</strong></router-link>
+        <h3><strong>Already have an account?</strong><router-link to="/dashboard" id="link-signin"><strong> Sign in</strong></router-link>
         </h3>
 
       </form>
@@ -63,13 +63,13 @@ export default {
   margin-bottom: 40px;
   margin-top: 40px;
   background-color: #e0a081;
-  color: white;
+  color: rgb(10, 10, 10);
   font-size: 20px;
 }
 
 #registerBtn:hover {
   background-color: #8d2e11;
-  color: white;
+  color: rgb(17, 16, 16);
 }
 
 #link-signin {

@@ -43,7 +43,7 @@ export default {
           email: email.value,
           password: password.value
         })
-        router.push('/')
+        router.push('/dashboard')
       }
       catch (err) {
         error.value = err.message
@@ -58,13 +58,13 @@ export default {
   margin-bottom: 40px;
   margin-top: 40px;
   background-color: #4a27c5;
-  color: white;
+  color: rgb(7, 7, 7);
   font-size: 20px;
 }
 
 #loginBtn:hover {
   background-color: rgb(108, 136, 179);
-  color: white;
+  color: rgb(19, 18, 18);
 }
 
 .textfields {
@@ -78,11 +78,11 @@ export default {
 }
 
 #link-register:hover {
-  color: #9dddf7;
+  color: #021d27;
 }
 
 template {
-  background-color: rgb(196, 235, 238);
+  background-color: rgb(5, 27, 29);
 
 }
 </style>

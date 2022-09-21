@@ -29,7 +29,7 @@
 <script>
 import DataService from "../services/DataService";
 import QuizDetails from "../views/QuizDetails.vue";
-import { database } from "../firebase";
+import { database } from "../firebase"; //nasan yung quiz details mong vue?
 export default {
     components: { QuizDetails: QuizDetails },
     data() {
