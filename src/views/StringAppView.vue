@@ -1,7 +1,7 @@
 <template>
 <v-container fluid>
 <v-card
-    color="#80DEEA">
+    color="#512DA8">
      <v-container>
   <v-card-title> String Manipulator </v-card-title>
 

@@ -6,6 +6,7 @@ import AboutVuetify from '../views/AboutVuetify.vue'
 import SimpleCalculator from '../views/SimpleCalculator.vue'
 import StringManipulation from '../views/StringManipulation.vue'
 import QuizView from '../views/QuizView.vue'
+import Scores from '../views/Scores.vue';
 import HomeView from '../views/HomeView.vue'
 import AboutPage from '../views/AboutPage.vue'
 
@@ -43,6 +44,12 @@ const router = createRouter({
             path: '/QuizView',
             name: 'QuizView',
             component: QuizView
+        },
+
+        {
+            path: '/Scores',
+            name: 'Scores',
+            component: Scores
         },
 
         {

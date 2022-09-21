@@ -2,7 +2,7 @@
 
     <v-container fluid>
         
-      <v-card color="#AA6C39">
+      <v-card color="#512DA8">
         
         <v-container>
           <v-card-title> Simple Calculator </v-card-title>

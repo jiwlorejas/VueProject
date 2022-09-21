@@ -1,5 +1,8 @@
 <template>
   <center>
+    <v-card color="#45B39D">
+      <v-card color="#D4EFDF" tonal width="800" class="ma-10 pa-10" elevation="10">
+
       <v-card tonal width="800" class="ma-10 pa-10" elevation="10">
         <v-card-title>
           <h1 style="font-weight: bold; margin-bottom: 20px;">Sign In</h1>
@@ -18,6 +21,7 @@
 
           <h3><strong>New user?</strong><router-link to="/register" id="link-register"><strong> Create an account</strong></router-link></h3>
         </form>
+      </v-card>
       </v-card>
   </center>
 </template>
@@ -60,7 +64,7 @@ export default {
 }
 
 #loginBtn:hover {
-  background-color: #8d2e11;
+  background-color: #df6f3c;
   color: white;
 }
 
@@ -70,11 +74,11 @@ export default {
 }
 
 #link-register {
-  color: #5c1c03;
+  color: #e26a3b;
   background-color: transparent;
 }
 
 #link-register:hover {
-  color: #812b10;
+  color: #d16e50;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <v-parallax src="https://www.ncl.ac.uk/mediav8/gps/images/microsoftteams-image2.jpg">
+    <v-parallax src="https://images.unsplash.com/photo-1533035336122-4327d347d2fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhaW58ZW58MHx8MHx8&w=1000&q=80">
       <div class="container">
       <div class="correctAnswers">
         You have
