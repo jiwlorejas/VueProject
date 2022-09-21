@@ -2,10 +2,9 @@
   <center>
     <v-card color="#45B39D">
       <v-card color="#D4EFDF" tonal width="800" class="ma-10 pa-10" elevation="10">
-
-      <v-card tonal width="800" class="ma-10 pa-10" elevation="10">
+        
         <v-card-title>
-          <h1 style="font-weight: bold; margin-bottom: 20px;">Sign In</h1>
+          <h1 style="font-weight: bold; margin-bottom: 20px; color: black;">Login</h1>
         </v-card-title>
         <div v-if="error" class="alert alert-danger">{{error}}</div>
         <form action="#" @submit.prevent="Login">
@@ -44,7 +43,7 @@ export default {
           email: email.value,
           password: password.value
         })
-        router.push('/dashboard')
+        router.push('/')
       }
       catch (err) {
         error.value = err.message
@@ -58,13 +57,13 @@ export default {
 #loginBtn {
   margin-bottom: 40px;
   margin-top: 40px;
-  background-color: #e0a081;
+  background-color: #4a27c5;
   color: white;
   font-size: 20px;
 }
 
 #loginBtn:hover {
-  background-color: #df6f3c;
+  background-color: rgb(108, 136, 179);
   color: white;
 }
 
@@ -74,11 +73,16 @@ export default {
 }
 
 #link-register {
-  color: #e26a3b;
+  color: rgb(118, 132, 214);
   background-color: transparent;
 }
 
 #link-register:hover {
-  color: #d16e50;
+  color: #9dddf7;
+}
+
+template {
+  background-color: rgb(196, 235, 238);
+
 }
 </style>
